@@ -1,4 +1,4 @@
-package day3;
+package D03;
 
 import org.junit.jupiter.api.Test;
 
@@ -31,6 +31,4 @@ class BinarySearchIterativeTest {
         assertEquals(expected, result);
         System.out.println("The number was found at index: " + result);
     }
-
-
 }
