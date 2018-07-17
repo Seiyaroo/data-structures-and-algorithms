@@ -90,7 +90,7 @@ public class LinkedList {
         insertBefore.next = current.next;
         current.next = insertBefore;
     }
-    
+
 // this method finds the requested value and inserts a new one after it without dropping the list
 
     public void insertAfter(int value, int newValue) {
