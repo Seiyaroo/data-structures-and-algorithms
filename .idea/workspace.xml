@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="006b34fd-2395-470a-81b6-29564d315ba8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/D06/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D06/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D06/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D06/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D08/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D08/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D08/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D08/NodeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="006b34fd-2395-470a-81b6-29564d315ba8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
