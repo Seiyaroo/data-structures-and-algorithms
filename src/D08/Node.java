@@ -30,10 +30,6 @@ public class Node {
             newNext = oldNext;
             oldNext = current.Next;
 
-    public void AddNodeToTail(Node) {
-            if ()
-    }
-
         }
 
         return rootA;

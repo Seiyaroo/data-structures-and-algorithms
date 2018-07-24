@@ -18,6 +18,7 @@ public class LinkedList {
     }
 
     public boolean isEmpty() {
+
         return this.root == null;
     }
 
