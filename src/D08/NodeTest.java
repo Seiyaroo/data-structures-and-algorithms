@@ -8,6 +8,6 @@ class NodeTest {
 
     @Test
     void mergeLists() {
-        
+
     }
 }

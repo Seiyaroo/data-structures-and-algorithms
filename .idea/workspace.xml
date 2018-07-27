@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006b34fd-2395-470a-81b6-29564d315ba8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/D08/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/D08/LinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/D08/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures-and-algorithms/D03/ArrayBinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures-and-algorithms/D03/BinarySearchIterativeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures-and-algorithms/D04/LargestProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures-and-algorithms/D05/MatrixRotationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D02/ArrayShiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D02/ArrayShiftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D08/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/D08/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D08/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/D08/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/D08/NodeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1510" />
+          <entry key="java" value="1550" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1510" />
+          <entry key="JAVA" value="1550" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -54,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/D08/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1405">
-              <caret line="144" column="48" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+            <state relative-caret-position="534">
+              <caret line="158" column="38" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#131#132#0" expanded="true" />
@@ -68,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/D08/NodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/D08/Node.java" />
         <option value="$PROJECT_DIR$/src/D08/ListNode.java" />
         <option value="$PROJECT_DIR$/src/D08/LinkedListTest.java" />
-        <option value="$PROJECT_DIR$/src/D08/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/D02/ArrayShiftTest.java" />
         <option value="$PROJECT_DIR$/src/D08/NodeTest.java" />
+        <option value="$PROJECT_DIR$/src/D08/LinkedList.java" />
       </list>
     </option>
   </component>
@@ -194,7 +185,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532633683723" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532709630394" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -355,7 +346,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531184219299</updated>
-      <workItem from="1532623975995" duration="5439000" />
+      <workItem from="1532623975995" duration="5628000" />
     </task>
     <servers />
   </component>
@@ -374,7 +365,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5439000" />
+    <option name="totallyTimeSpent" value="5628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -565,24 +556,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/D08/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/D08/NodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1405">
-          <caret line="144" column="48" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/D08/NodeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/D08/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="534">
+          <caret line="158" column="38" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>

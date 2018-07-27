@@ -155,3 +155,5 @@ public class LinkedList {
         return result;
     }
 }
+
+//Tests aren't written, need to write.
