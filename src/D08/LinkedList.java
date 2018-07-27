@@ -1,4 +1,8 @@
-package D06;
+package D08;
+
+import D06.ListNode;
+
+import java.util.List;
 
 public class LinkedList {
 
@@ -92,7 +96,7 @@ public class LinkedList {
         current.next = insertBefore;
     }
 
-// this method finds the requested value and inserts a new one after it without dropping the list
+    // this method finds the requested value and inserts a new one after it without dropping the list
 
     public void insertAfter(int value, int newValue) {
         ListNode insertAfter = new ListNode(newValue);
@@ -104,4 +108,52 @@ public class LinkedList {
         insertAfter.next = current.next;
         current.next = insertAfter;
     }
+
+    // This method will merge 2 linked lists, and zip them into 1 singleylinkedlist
+
+    public static ListNode MergeLists(ListNode rootA, ListNode rootB) {
+        if (rootA == null) {
+            throw new NullPointerException("Root A is null");
+        }
+
+        if (rootB == null) {
+            throw new NullPointerException("Root B is null");
+        }
+
+        ListNode a = rootA;
+        ListNode b = rootB;
+        ListNode c = rootA.next;
+        ListNode d = rootB.next;
+
+        while (b != null) {
+
+            // So a and b are pointing back to each other here.
+            a.next = b;
+            b.next = c;
+
+            // move all references forward
+            a = c;
+            b = d;
+
+            // points forward to the next in line2
+            c = c.next;
+        }
+
+        return rootA;
+    }
+
+    // a tostring method to test our zipped list
+
+    public String toString() {
+        String result = "";
+        ListNode current = this.root;
+        while (current != null) {
+            result += current.data + " ";
+            current = current.next;
+
+        }
+        return result;
+    }
 }
+
+//Tests aren't written, need to write.

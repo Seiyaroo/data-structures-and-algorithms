@@ -31,21 +31,24 @@ class LinkedListTest {
 
     @Test
     void toStringEmptyList() {
+
         assertEquals("[]", empty.l1.ToString());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void toStringEmptyList() {
         assertEquals("[12]", empty.l2.ToString());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void toStringEmptyList() {
+
         assertEquals("[12, 14]", empty.l3.ToString());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void toStringEmptyList() {
+
         assertEquals("[12, 14, 19, 92, 45]", empty.l4.ToString());
     }
 
