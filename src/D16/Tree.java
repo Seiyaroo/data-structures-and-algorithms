@@ -1,7 +1,5 @@
 package D16;
 
-import javax.swing.tree.TreeNode;
-
 public class Tree {
     public abstract class Main extends FizzBuzzTree implements TreeNode {
         public static void main(String[] args) {
