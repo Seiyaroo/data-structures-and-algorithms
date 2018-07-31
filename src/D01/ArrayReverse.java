@@ -1,5 +1,3 @@
-package D01;
-
 public class ArrayReverse {
     public static void doubler(int [] arr) {
         for (int i = 0; i < arr.length; i++) {

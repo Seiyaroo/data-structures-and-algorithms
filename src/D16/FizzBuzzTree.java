@@ -7,6 +7,10 @@ public class FizzBuzzTree {
         return root;
     }
 
+    public void add(int value) {
+
+    }
+
     public String toString() {
         StringBuilder builder = new StringBuilder();
         return inOrder(builder, this.root).toString();
