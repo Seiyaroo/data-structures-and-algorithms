@@ -1,11 +1,7 @@
 package D16;
 
 public class FizzBuzzTree {
-    private TreeNode root;
-
-    public TreeNode getRoot() {
-        return root;
-    }
+    protected TreeNode root;
 
     public void add(int value) {
 
