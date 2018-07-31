@@ -13,3 +13,5 @@ public class Tree {
         }
     }
 }
+
+//Adding this to solve merge conflict.
