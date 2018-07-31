@@ -10,6 +10,8 @@ public class Tree {
             tree.add(6);
             tree.add(2);
             tree.add(15);
+            tree.add(22);
+            tree.add(38);
         }
     }
 }
