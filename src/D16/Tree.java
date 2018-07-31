@@ -11,5 +11,3 @@ public class Tree {
         tree.add(38);
     }
 }
-
-//Adding this to solve merge conflict.
