@@ -1,10 +1,9 @@
 package D06;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 class LinkedListTest {
     public LinkedList empty;
@@ -13,8 +12,7 @@ class LinkedListTest {
     public LinkedList l3;
     public LinkedList l4;
 
-
-    @BeforeEach
+    @Before
     void setUp() {
         empty = new LinkedList();
 
@@ -31,29 +29,24 @@ class LinkedListTest {
 
     @Test
     void toStringEmptyList() {
-
-        assertEquals("[]", empty.l1.ToString());
+        assertEquals("[]", empty.toString());
     }
 
     @Test
-    void toStringEmptyList() {
-        assertEquals("[12]", empty.l2.ToString());
+    void toStringEmptyListTwo() {
+        assertEquals("[12]", l2.toString());
     }
 
     @Test
-    void toStringEmptyList() {
+    void toStringEmptyListThree() {
 
-        assertEquals("[12, 14]", empty.l3.ToString());
+        assertEquals("[12, 14]", l3.toString());
     }
 
     @Test
-    void toStringEmptyList() {
+    void toStringEmptyListFour() {
 
-        assertEquals("[12, 14, 19, 92, 45]", empty.l4.ToString());
-    }
-
-    @AfterEach
-    void tearDown() {
+        assertEquals("[12, 14, 19, 92, 45]", l4.toString());
     }
 
     @Test
