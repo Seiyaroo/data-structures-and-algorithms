@@ -3,10 +3,10 @@ package D02;
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
-class ArrayShiftTest {
+public class ArrayShiftTest {
 
     @Test
-    void insertShiftArray() {
+    public void insertShiftArray() {
         int[] numbers = {2, 4, 6, 8};
         int n = 5;
         ArrayShift.insertShiftArray(numbers, n);

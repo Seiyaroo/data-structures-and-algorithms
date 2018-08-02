@@ -2,9 +2,9 @@ package D16;
 
 import org.junit.Test;
 
-class FizzBuzzTreeTest {
+public class FizzBuzzTreeTest {
     @Test
-    void fizzBuzzMovement() {
+    public void fizzBuzzMovement() {
         FizzBuzzTree tree = new FizzBuzzTree();
         TreeNode n53 = new TreeNode(53);
 

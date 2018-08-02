@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class breadthFirstTraversal {
     public TreeNode17 root;
-    protected static void breadthFirst(TreeNode root) {
+    public static void breadthFirst(TreeNode root) {
 
         //create a queue
         Queue <TreeNode> QQ = new LinkedList<>();
