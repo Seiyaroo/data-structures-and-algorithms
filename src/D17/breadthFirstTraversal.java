@@ -1,7 +1,5 @@
 package D17;
 
-import D18.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -11,15 +9,15 @@ public class breadthFirstTraversal {
 
         //create a queue
         Queue <TreeNode> QQ = new LinkedList<>();
+
         //add the root outside the while loop
         QQ.add(root);
 
-        System.out.println(QQ);
-        System.out.println(root);
-
-        while (QQ != null) {
+        //Run the while that says when its not empty, you add stuff to the Queue
+        //and then if the left and right are not empty, you add them to the queue.
+        while (!QQ.isEmpty()) {
             TreeNode temp = QQ.poll();
-            System.out.println("Visited Node: " + temp);
+            System.out.println("Visited Node: " + temp.data);
 
             if (temp.left != null) {
                 QQ.add(temp.left);

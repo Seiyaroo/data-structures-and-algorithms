@@ -6,6 +6,7 @@ public class TreeNode {
     public TreeNode right;
 
     public TreeNode(int value) {
+
         this.data = value;
     }
 }
