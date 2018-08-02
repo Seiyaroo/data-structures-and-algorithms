@@ -4,10 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class BinarySearchIterativeTest {
+public class BinarySearchIterativeTest {
 
     @Test
-    void numberSearchOne() {
+    public void numberSearchOne() {
         int[] arr = {4,8,15,16,23,42};
         int low = 0;
         int high = arr.length - 1;
@@ -20,7 +20,7 @@ class BinarySearchIterativeTest {
     }
 
     @Test
-    void numberSearchTwo() {
+    public void numberSearchTwo() {
         int[] arr = {11,22,33,44,55,66,77};
         int low = 0;
         int high = arr.length - 1;

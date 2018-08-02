@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class LinkedListTest {
+public class LinkedListTest {
     public LinkedList empty;
     public LinkedList l1;
     public LinkedList l2;
@@ -13,7 +13,7 @@ class LinkedListTest {
     public LinkedList l4;
 
     @Before
-    void setUp() {
+    public void setUp() {
         empty = new LinkedList();
 
         l1 = new LinkedList();
@@ -28,45 +28,45 @@ class LinkedListTest {
     }
 
     @Test
-    void toStringEmptyList() {
+    public void toStringEmptyList() {
         assertEquals("[]", empty.toString());
     }
 
     @Test
-    void toStringEmptyListTwo() {
+    public void toStringEmptyListTwo() {
         assertEquals("[12]", l2.toString());
     }
 
     @Test
-    void toStringEmptyListThree() {
+    public void toStringEmptyListThree() {
 
         assertEquals("[12, 14]", l3.toString());
     }
 
     @Test
-    void toStringEmptyListFour() {
+    public void toStringEmptyListFour() {
 
         assertEquals("[12, 14, 19, 92, 45]", l4.toString());
     }
 
     @Test
-    void prepend() {
+    public void prepend() {
     }
 
     @Test
-    void isEmpty() {
+    public void isEmpty() {
     }
 
     @Test
-    void size() {
+    public void size() {
     }
 
     @Test
-    void get() {
+    public void get() {
     }
 
     @Test
-    void printList() {
+    public void printList() {
     }
 
     @Test
@@ -74,10 +74,10 @@ class LinkedListTest {
     }
 
     @Test
-    void insertBefore() {
+    public void insertBefore() {
     }
 
     @Test
-    void insertAfter() {
+    public void insertAfter() {
     }
 }

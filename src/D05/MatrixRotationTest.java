@@ -2,13 +2,13 @@ package D05;
 
 import org.junit.Test;
 
-class MatrixRotationTest {
+public class MatrixRotationTest {
 
     @Test
-    void main() {
+    public void main() {
     }
 
     @Test
-    void matrixRotation() {
+    public void matrixRotation() {
     }
 }
