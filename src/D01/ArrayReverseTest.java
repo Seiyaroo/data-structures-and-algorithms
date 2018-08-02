@@ -3,7 +3,7 @@ package D01;
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
-class ArrayReverseTest {
+public class ArrayReverseTest {
     @Test
     public void testEmpty() throws Exception {
         int[] numbers = {};
