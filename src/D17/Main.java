@@ -1,7 +1,5 @@
 package D17;
 
-import D18.TreeNode;
-
 public class Main {
     public static void main(String[] args) {
         breadthFirstTraversal tree = new breadthFirstTraversal();
@@ -24,5 +22,7 @@ public class Main {
         n53.right = n75;
         n75.left = n66;
         n75.right = n99;
+
+        breadthFirstTraversal.breadthFirst(tree.root);
     }
 }
