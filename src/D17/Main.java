@@ -1,17 +1,19 @@
 package D17;
 
+import D18.TreeNode;
+
 public class Main {
     public static void main(String[] args) {
         breadthFirstTraversal tree = new breadthFirstTraversal();
-        TreeNode17 n53 = new TreeNode17(53);
+        TreeNode n53 = new TreeNode(53);
 
-        TreeNode17 n18 = new TreeNode17(18);
-        TreeNode17 n12 = new TreeNode17(12);
-        TreeNode17 n24 = new TreeNode17(24);
+        TreeNode n18 = new TreeNode(18);
+        TreeNode n12 = new TreeNode(12);
+        TreeNode n24 = new TreeNode(24);
 
-        TreeNode17 n75 = new TreeNode17(75);
-        TreeNode17 n66 = new TreeNode17(66);
-        TreeNode17 n99 = new TreeNode17(99);
+        TreeNode n75 = new TreeNode(75);
+        TreeNode n66 = new TreeNode(66);
+        TreeNode n99 = new TreeNode(99);
 
         // connect nodes
         tree.root = n53;

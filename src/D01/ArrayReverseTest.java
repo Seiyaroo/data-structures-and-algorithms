@@ -5,7 +5,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class ArrayReverseTest {
     @Test
-    public void testEmpty() throws Exception {
+    public void testEmpty() {
         int[] numbers = {};
         ArrayReverse.doubler(numbers);
 
@@ -14,7 +14,7 @@ public class ArrayReverseTest {
     }
 
     @Test
-    public void testDoubler() throws Exception {
+    public void testDoubler() {
         int[] numbers = {2, 4, 6, 8, 10};
         ArrayReverse.doubler(numbers);
 
@@ -23,7 +23,7 @@ public class ArrayReverseTest {
     }
 
     @Test
-    public void testReverse() throws Exception {
+    public void testReverse() {
         int[] numbers = {10, 8, 6, 4, 2};
         ArrayReverse.reverse(numbers);
 
