@@ -1,12 +1,12 @@
 package D17;
 
-import D16.TreeNode;
+import D18.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class breadthFirstTraversal {
-    public TreeNode17 root;
+    public TreeNode root;
     public static void breadthFirst(TreeNode root) {
 
         //create a queue

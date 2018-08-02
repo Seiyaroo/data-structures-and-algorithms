@@ -1,21 +1,22 @@
 package D18;
 
-import D16.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
-public class findMaxValue {
+
+public class FindMaxValue {
+
     public static int findMax(TreeNode root) {
-        int maximumValue = 0;
 
         //create a queue
         Queue<TreeNode> breadthQueue = new LinkedList<>();
 
         //add the root outside the while loop
         breadthQueue.add(root);
+        int maximumValue = root.data;
 
-        while (breadthQueue != null) {
+        while (!breadthQueue.isEmpty()) {
             TreeNode temp = breadthQueue.poll();
+
 
             //compares the placeholder maxVal as 0 and if the new highest encountered val is > than that
             // then you can say the new value is the max value currently. Until another is encountered.
@@ -23,7 +24,8 @@ public class findMaxValue {
                 maximumValue = temp.data;
             }
 
-            System.out.println("Visited Node: " + temp);
+            System.out.println("Visited Node: " + temp.data);
+            System.out.println("Maximum value is " + temp.data);
 
             if (temp.left != null) {
                 breadthQueue.add(temp.left);
