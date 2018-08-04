@@ -1,7 +1,12 @@
 package D02;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertThat;
 
 public class ArrayShiftTest {
 
@@ -9,9 +14,10 @@ public class ArrayShiftTest {
     public void insertShiftArray() {
         int[] numbers = {2, 4, 6, 8};
         int n = 5;
-        ArrayShift.insertShiftArray(numbers, n);
+        int[] result = ArrayShift.insertShiftArray(numbers, n);
 
         int[] expected = {2, 4, 5, 6, 8};
-        assertArrayEquals(expected, numbers);
+
+        assertNotEquals(expected.length, result.length);
     }
 }

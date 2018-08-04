@@ -9,9 +9,8 @@ public class ArrayShift {
         insertShiftArray(firstArr, newVal);
     }
 
-    public static void insertShiftArray(int[] firstArr, int newVal) {
+    public static int[] insertShiftArray(int[] firstArr, int newVal) {
         int length = firstArr.length;
-//        int[] secondArr = new int[length + 1];
 
         int[] tempA = new int[(length + 1) / 2];
         int[] tempB = new int[length - tempA.length];
@@ -25,10 +24,6 @@ public class ArrayShift {
         }
 
         int[] secondArr = new int[tempA.length + tempB.length];
-        System.out.print(Arrays.toString(secondArr));
-
-        System.out.println(Arrays.toString(tempA));
-        System.out.println(newVal);
-        System.out.println(Arrays.toString(tempB));
+        return secondArr;
     }
 }
