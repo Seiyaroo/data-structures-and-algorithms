@@ -5,11 +5,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-import javax.swing.tree.TreeNode;
 
-public class treeIntersection {
+public class TreeIntersection {
 
-    public static Set treeCrossSection(TreeNode root1, TreeNode root2) {
+    public static Set treeIntersection(TreeNode root1, TreeNode root2) {
         // Create hash sets to hold the tree node values
         Set<Integer> ss1 = new HashSet<>();
         Set<Integer> ss2 = new HashSet<>();

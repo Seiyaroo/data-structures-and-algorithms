@@ -1,10 +1,11 @@
 package D32;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-class treeIntersectionTest {
+class TreeIntersectionTest {
 
     @Test
     void emptyTreesTest() {
