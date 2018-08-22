@@ -1,22 +1,22 @@
 package D32;
 
+import static D32.TreeIntersection.treeIntersection;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Test;
-
-import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 class TreeIntersectionTest {
 
-    @Test
+    @org.junit.jupiter.api.Test
     void emptyTreesTest() {
         BinaryTree tree1 = new BinaryTree();
         BinaryTree tree2 = new BinaryTree();
 
-        boolean isNull = TreeIntersection.treeIntersection(tree1.root, tree2.root) == null;
+        boolean isNull = treeIntersection(tree1.root, tree2.root) == null;
         assertTrue(isNull);
     }
 
-    @Test
+
+    @org.junit.jupiter.api.Test
     void tree1EmptyTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
@@ -37,7 +37,7 @@ class TreeIntersectionTest {
         n1.right = n3;
 
         String expected = "[]";
-        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+        String result = treeIntersection(tree1.root, tree2.root).toString();
 
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
@@ -45,7 +45,7 @@ class TreeIntersectionTest {
         assertEquals(expected, result);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void tree2EmptyTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
@@ -66,7 +66,7 @@ class TreeIntersectionTest {
         BinaryTree tree2 = new BinaryTree();
 
         String expected = "[]";
-        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+        String result = treeIntersection(tree1.root, tree2.root).toString();
 
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
@@ -74,7 +74,7 @@ class TreeIntersectionTest {
         assertEquals(expected, result);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void identicalWithDuplicateInTreeTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
@@ -131,7 +131,7 @@ class TreeIntersectionTest {
         n8.left = n9;
 
         String expected = "[2, 18, 5, 6, 7, 9, 11]";
-        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+        String result = treeIntersection(tree1.root, tree2.root).toString();
 
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
@@ -139,7 +139,7 @@ class TreeIntersectionTest {
         assertEquals(expected, result);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void unorderedDuplicatesTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
@@ -196,7 +196,7 @@ class TreeIntersectionTest {
         n8.left = n9;
 
         String expected = "[18, 6, 7, 9]";
-        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+        String result = treeIntersection(tree1.root, tree2.root).toString();
 
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
@@ -204,7 +204,7 @@ class TreeIntersectionTest {
         assertEquals(expected, result);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void whiteboardInputTest() {
         // Construct first tree
         BinaryTree tree1 = new BinaryTree();
@@ -269,7 +269,7 @@ class TreeIntersectionTest {
         n8.right = n12;
 
         String expected = "[160, 100, 500, 200, 125, 350, 175]";
-        String result = TreeIntersection.treeIntersection(tree1.root, tree2.root).toString();
+        String result = treeIntersection(tree1.root, tree2.root).toString();
 
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
