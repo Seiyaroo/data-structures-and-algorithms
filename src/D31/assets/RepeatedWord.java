@@ -1,6 +1,5 @@
 package D31.assets;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class RepeatedWord {
@@ -10,20 +9,15 @@ public class RepeatedWord {
 
         HashMap<String, Integer> storyHash = new HashMap<>();
 
-        // Converts to lower case to account for capitals
-        // split at all spaces, non words / letters, and digits
-        // Add greedy quantifier to remove extra spaces
+        // Convert to lower cast, split it on spaces, and then move forward
         String[] eachWord = string.toLowerCase().split("[\\W\\d]+");
-        System.out.println("eachWord array: " + Arrays.toString(eachWord));
 
-        // If the array is empty, immediately return the array / empty string
+        // If empty, return emtpy string / array
         if (eachWord.length == 0) {
             return "";
         }
 
-        // Run through the array
-        // Puts a word in the hashmap if its not in there
-        // If it is, insert into our firstRepeat and return
+        //Iterate through the array, put into map, and then return it
         for (int i = 0; i < eachWord.length; i++ ) {
             if (!storyHash.containsKey(eachWord[i])) {
                 storyHash.put(eachWord[i], wordCounter++);
