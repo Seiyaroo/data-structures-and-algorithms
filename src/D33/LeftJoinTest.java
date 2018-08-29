@@ -37,25 +37,28 @@ public class LeftJoinTest {
             List<String> fondList = new ArrayList<>();
             fondList.add("enamored");
             fondList.add("averse");
-
             expected.put("fond", fondList);
+
 
             List<String> wrathList = new ArrayList<>();
             wrathList.add("anger");
             wrathList.add("delight");
+            expected.put("wrath", wrathList);
+
 
             List<String> diligentList = new ArrayList<>();
             diligentList.add("employed");
             diligentList.add("idle");
+            expected.put("diligent", diligentList);
+
 
             List<String> guideList = new ArrayList<>();
             guideList.add("usher");
             guideList.add("follow");
+            expected.put("guide", guideList);
 
-//            List<String> flowList = new ArrayList<>();
-//            flowList.add("usher");
-//            flowList.add("jam");
 
-            assertEquals(expected, actual);
+            assertEquals(expected.get("fond").get(0), actual.get("fond").get(0));
+            assertEquals(expected.get("fond").get(1), actual.get("fond").get(1));
         }
     }
