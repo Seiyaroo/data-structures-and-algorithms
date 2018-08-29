@@ -1,26 +1,107 @@
 package D37;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class SelectionSort {
-    public static void selectionSort(int array[]) {
-        int n = array.length;
+//    // Selection sort method
+//    public static void selectionSort(int array[]) {
+//        int n = array.length;
+//
+//        //Iterate through the array via loop
+//        for (int i = 0; i < n-1; i++) {
+//            //Try to find the minimum element in the array
+//            int min = i;
+//            for (int j = i+1; j < n; j++)
+//                if (array[j] < array[min]) {
+//                    min = j;
+//                }
+//        }
+//        //Swapping mechanism to swap the min int with the first index in the array
+//        int temp = array[min];
+//        array[min] = array[i];
+//        array[i] = temp;
+//    }
 
-        //Iterate through the array via loop
-        for (int i = 0; i < n-1; i++) {
-            //Try to find the minimum element in the array
-            int min = i;
-            for (int j = i+1; j < n; j++)
-                if (array[j] < array[min]) {
-                    min = j;
-                }
+    //Merge sort method
+    public static void mergeSort(int arr[], int x, int y, int z)
+    {
+        // Find sizes of two subarrays to be merged
+        int n1 = y - x + 1;
+        int n2 = z - y;
+
+        /* Create temp arrays */
+        int Left[] = new int [n1];
+        int Right[] = new int [n2];
+
+        /*Copy data to temp arrays*/
+        for (int i=0; i<n1; ++i)
+            Left[i] = arr[x + i];
+        for (int j=0; j<n2; ++j)
+            Right[j] = arr[y + 1+ j];
+        System.out.println("" + Arrays.toString(arr));
+        /* Merge the temp arrays */
+
+        // Initial indexes of first and second subarrays
+        int i = 0, j = 0;
+
+        // Initial index of merged subarray
+        int k = x;
+        while (i < n1 && j < n2)
+        {
+            if (Left[i] <= Right[j])
+            {
+                arr[k] = Left[i];
+                i++;
+            }
+            else
+            {
+                arr[k] = Right[j];
+                j++;
+            }
+            k++;
         }
-        //Swapping mechanism to swap the min int with the first index in the array
-        int temp = array[min];
-        array[min] = array[i];
-        array[i] = temp;
+
+        /* Copy remaining elements of Left[] if any */
+        while (i < n1)
+        {
+            arr[k] = Left[i];
+            i++;
+            k++;
+        }
+
+        /* Copy remaining elements of Right[] if any */
+        while (j < n2)
+        {
+            arr[k] = Right[j];
+            j++;
+            k++;
+        }
+        System.out.println("" + Arrays.toString(arr));
     }
+
+    // Main function that sorts arr[Left..Right] using
+    // mergeSort()
+    public static void sort(int arr[], int l, int r)
+    {
+        if (l < r)
+        {
+            // Find the middle point
+            int m = (l+r)/2;
+
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr , m+1, r);
+
+            // Merge the sorted halves
+            mergeSort(arr, l, m, r);
+        }
+    }
+
+    // ==============HELPER===============
+    // ==============FUNCTIONS============
 
 //    public static void printTheArray(int array[]) {
 //        int n = array.length;
@@ -29,84 +110,48 @@ public class SelectionSort {
 //            System.out.println();
 //        }
 //    }
+//
+//    public static int isSorted(int array[], int n) {
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//        if (array[n-1] < array[n-2]) {
+//            return 0;
+//        }
+//        return isSorted(array, n-1);
+//    }
+        public static int[] generateRandomSizedArray (int size) {
 
-    public static int isSorted(int array[], int n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        }
+            int[] a = new int[size];
 
-        if (array[n-1] < array[n-2]) {
-            return 0;
-        }
-        return isSorted(array, n-1);
-    }
+            for (int i = 0; i < size; i++) {
+                a[i] = (int)(Math.random()*10);
 
-    public static int[] generateRandomArraysOfNumbers (int[] sizeOf) {
-        while (sizeOf.length <= 10) {
-            if (int i = 0; i < )
-        }
-    }
-
-    public static Random shuffleTheArray(int[] arrayShuffle) {
-        Random rnd = ThreadLocalRandom.current();
-        for (int i = arrayShuffle.length - 1; i > 0; i--) {
-            int index = arrayShuffle(Math.random());
-
-            int a = arrayShuffle[index];
-            arrayShuffle[index] = arrayShuffle[i];
-            arrayShuffle[i] = a;
-        }
-    }
-
-    //Merge sort method
-    public static int[] mergeSort(int[] array, int start, int end) {
-        //Defining the middle as the halfway mark of end - start divided by 2
-        int middle = (end - start)/2; {
-            if (end == start) {
-                // aftering finding the middle you subtract that from the start and thats the index
-                // you will be splitting down
-                int[] leftSide = new int[middle - start];
-                // the right side is the end minus the middle + 1 to start your new Right side array that is
-                // the second half of your original array
-                int[] rightSide = new int[end - middle + 1];
-                // run your zipper method that takes in the array, and a left and right side
-                zipper(array, leftSide, rightSide);
+                for (int j = 0; j < i; j++) {
+                    if (a[i] == a[j]) {
+                        a[j] = (int)(Math.random()*10);
+                    }
+                }
             }
-            // recurse run your mergesort and at the end return the array that is now zipped back up and is
-            // a sorted array from left to right ideally
-            mergeSort(array, 0, middle);
-            mergeSort(array, middle + 1, end);
-            return array;
-        }
-    }
 
-    // Helper function zipper method for mergesort
-    public static int[] zipper(int[] arr, int[] L, int[] R) {
-        int i = 0;
-        int j = 0;
-        int k = 0;
-
-        // here you are saying that while the k integer is less than the length of your array
-        // you run this function
-        while (k < arr.length) {
-            // if the length of (L)eft is equal to integer i you will equate array at integer k
-            // to the (R)ight side at integer j
-            if (i == L.length) {
-                arr[k] = R[j];
-                continue;
+            for (int i = 0; i < a.length; i++) {
+                System.out.print(a[i]+" ");
             }
-            // if the length of j int matches the (R)ight side length of your array you will proceed through
-            // this function
-            if (j == R.length) {
-                // array at integer k is equal to (L)eft side at index ++
-                arr[k] = L[i++];
-                continue;
-            }
-            // Essentially array at index k is = to L index which is less than R's index at that position.
-            // you then run through L and R and then return that combined array of L + R which is
-            // your return arr
-            arr[k] = (L[i] < R[j]) ? L[i++] : R[j++];
+            System.out.println();
+            return a;
         }
-        return arr;
-    }
+//
+//    public static Random shuffleTheArray(int[] arrayShuffle) {
+//        Random rnd = ThreadLocalRandom.current();
+//        for (int i = arrayShuffle.length - 1; i > 0; i--) {
+//            int index = arrayShuffle(Math.random());
+//
+//            int a = arrayShuffle[index];
+//            arrayShuffle[index] = arrayShuffle[i];
+//            arrayShuffle[i] = a;
+//        }
+//    }
+
+
+
 }
