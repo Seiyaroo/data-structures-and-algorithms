@@ -31,8 +31,8 @@ public class SelectionSort {
         int n2 = right - middle;
 
         /* Create temp arrays */
-        double Left[] = new double[][n1];
-        double Right[] = new double[][n2];
+        double Left[] = new double[n1];
+        double Right[] = new double[n2];
 
         /*Copy data to temp arrays*/
         for (int i = 0; i < n1; ++i)
@@ -89,23 +89,40 @@ public class SelectionSort {
             mergeSort(inputArr, left, middle, right);
         }
     }
+
+
     // ==============HELPER===============
     // ==============FUNCTIONS============
 
-
-    public static double[] randomN (int size) {
+    public static double[] randomN(int size) {
         double[] randomData = new double[size];
+
         for (int i = 0; i < size; i++) {
-            Random randomVal = new Random();
-            randomData[i] = randomVal.nextDouble() * 10000;
-            }
-            return randomData;
+            Random randVal = new Random();
+            randomData[i] = randVal.nextDouble() * 10000;
         }
+
+        return randomData;
     }
+
 
     public static double[] duplicator(double[] original) {
         double[] copy = new double[original.length];
 
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < original.length; i++) {
+            copy[i] = original[i];
+        }
+
+        return copy;
     }
+
+    public static boolean isSorted(double[] input) {
+        for (int i = 0; i < input.length - 1; i++) {
+            if (input[i + 1] < input[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
 
